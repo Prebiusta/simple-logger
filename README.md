@@ -1,6 +1,5 @@
 ## Simple Logger
 
-***
 To initiate logger, instantiate `LoggerManager` and add desired loggers. `LoggerManager` will then automatically handle
 logs for all registered logger (file, console, etc.)
 
