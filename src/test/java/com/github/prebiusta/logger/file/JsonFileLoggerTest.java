@@ -31,4 +31,16 @@ class JsonFileLoggerTest {
         loggerManager.error("Error Message");
         loggerManager.fatal("Fatal Message");
     }
+
+    @Test
+    public void testJsonLoggerWithException() {
+        Exception exception = new Exception("Exception message");
+
+        loggerManager.verbose("Verbose Message", exception);
+        loggerManager.debug("Debug Message", exception);
+        loggerManager.info("Info Message", exception);
+        loggerManager.warning("Warn Message", exception);
+        loggerManager.error("Error Message", exception);
+        loggerManager.fatal("Fatal Message", exception);
+    }
 }
